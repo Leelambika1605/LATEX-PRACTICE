@@ -1,0 +1,39 @@
+\documentclass[12pt]{report}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage[a4paper , margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{pifont}
+\begin{document}
+
+\begin{itemize}
+    \item HTML 
+    \item CSS 
+    \item JavaScript
+    \item SQL
+\end{itemize}
+
+\begin{enumerate}[label=\arabic*.]
+    \item First item
+    \item Second item
+   \begin{enumerate}[label=(\alph*)]
+    \item True
+    \item False
+    \end{enumerate}
+\end{enumerate}
+   \begin{enumerate}[label*=\arabic*]
+    \item network initilization
+      \begin{enumerate}[label*=.\arabic*)]
+        \item key generation
+        \item secure data transformation
+        \item [\ding{118}] Today attended Latex workshop
+        \item [\ding{228}] Tommorow we have a something big  surprise 
+    \end{enumerate}
+\end{enumerate}
+
+
+\end{document}
